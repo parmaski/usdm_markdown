@@ -1,0 +1,317 @@
+<html>
+<head>
+    <style type="text/css">
+        .usdm_req h3 {
+            font-size: 1em;
+            border: 1px solid;
+            quotes: "<" ">";
+            background-color: #ffcccc;
+            margin: 0% 1% 0% 1%;
+        }
+        .usdm_req h3:before {
+            content: open-quote;
+        }
+        .usdm_req h3:after {
+            content: close-quote;
+        }
+
+        .usdm_req > ul {
+            display: table;
+            width: 98%;
+            padding-left: 0px;
+            margin: 0% 1% 0% 1%;
+        }
+
+        .usdm_req > ul > li {
+            display: table-row;
+        }
+        
+        .usdm_req > ul > li > em {
+            display: table-cell;
+            width: 6em;
+            padding: 4px;
+            border: 1px solid;
+            background-color: #ffcccc;
+        }
+
+        .usdm_req > ul > li > ul {
+            display: table-cell;
+            padding: 4px;
+            border: 1px solid;
+        }
+
+        .usdm_req > ul > li > ul > li {
+            display: inline;
+        }
+
+        .usdm_subreq h4 {
+            font-size: 1em;
+            border: 1px solid;
+            quotes: "<" ">";
+            background-color: #ccffcc;
+            margin: 0% 1% 0% calc(6em + 10px + 1%);
+        }
+        .usdm_subreq h4:before {
+            content: open-quote;
+        }
+        .usdm_subreq h4:after {
+            content: close-quote;
+        }
+
+        .usdm_subreq > ul {
+            display: table;
+            width: calc(98% - 6em - 10px);
+            padding-left: calc(6em + 10px);
+            margin: 0% 1% 0% 1%;
+        }
+
+        .usdm_subreq > ul > li {
+            display: table-row;
+        }
+        
+        .usdm_subreq > ul > li > em {
+            display: table-cell;
+            width: 6em;
+            border: 1px solid;
+            background-color: #ccffcc;
+            padding: 4px;
+        }
+
+        .usdm_subreq > ul > li > ul {
+            display: table-cell;
+            padding-left: 4px;
+            border: 1px solid;
+            padding: 4px;
+        }
+
+        .usdm_subreq > ul > li > ul > li {
+            display: inline;
+        }
+        
+        .usdm_func h5 {
+            font-size: 1em;
+            border: 1px solid;
+            quotes: "<" ">";
+            background-color: #ccccff;
+            margin: 0% 1% 0% calc(12em + 20px + 1%);
+        }
+        .usdm_func h5:before {
+            content: open-quote;
+        }
+        .usdm_func h5:after {
+            content: close-quote;
+        }
+
+        .usdm_func > ul {
+            display: table;
+            width: calc(98% - 12em - 20px);
+            padding-left: calc(12em + 20px);
+            margin: 0% 1% 0% 1%;
+        }
+
+        .usdm_func > ul > li {
+            display: table-row;
+        }
+        
+        .usdm_func > ul > li > em {
+            display: table-cell;
+            width: 6em;
+            border: 1px solid;
+            background-color: #ccccff;
+            padding: 4px;
+        }
+
+        .usdm_func > ul > li > ul {
+            display: table-cell;
+            padding-left: 4px;
+            border: 1px solid;
+            padding: 4px;
+        }
+
+        .usdm_func > ul > li > ul > li {
+            display: inline;
+        }
+    </style>
+    <style type="text/css_xxxx">
+        h3 {
+            border: 1px solid;
+            quotes: "<" ">";
+            background-color: #ffcccc;
+            margin: 0px;
+        }
+        h3:before {
+            content: open-quote;
+        }
+        h3:after {
+            content: close-quote;
+        }
+        h3 ~ p:before {
+            border: none;
+            background-color: #ffcccc;
+            height: 1.5em;
+            display: inline-block;
+        }
+        h3 ~ p:first-of-type:before {
+            content: "要求";
+            width: 4em;
+        }
+        h3 ~ p:first-of-type strong:first-child {
+            border: none;
+            border-right: 1px solid;
+            background-color: #ffcccc;
+            width: 4em;
+            display: inline-block;
+        }
+        h3 ~ p:nth-of-type(2):before {
+            content: "理由";
+            width: 8em;
+            border-right: 1px solid;
+        }
+        h3 ~ p:nth-of-type(3):before {
+            content: "説明";
+            width: 8em;
+            border-right: 1px solid;
+        }
+        h3 ~ p:nth-of-type(-n+3) {
+            margin: 0px;
+            border: none;
+            border-bottom: 1px solid;
+            padding: 0px;
+            background-color: #ffffff;
+            height: 1.5em;
+        }
+
+        h4 {
+            border: 1px solid;
+            quotes: "<" ">";
+            background-color: #ccccff;
+            margin: 0px;
+        }
+        h4:before {
+            content: open-quote;
+        }
+        h4:after {
+            content: close-quote;
+        }
+        h4 ~ p:before {
+            border: none;
+            background-color: #ccccff;
+            height: 1.5em;
+            display: inline-block;
+        }
+        h4 ~ p:first-of-type:before {
+            content: "要求";
+            width: 4em;
+        }
+        h4 ~ p:first-of-type strong:first-child {
+            border: none;
+            border-right: 1px solid;
+            background-color: #ccccff;
+            width: 4em;
+            height: 1.5em;
+            display: inline-block;
+        }
+        h4 ~ p:nth-of-type(2):before {
+            content: "理由";
+            width: 8em;
+            border-right: 1px solid;
+        }
+        h4 ~ p:nth-of-type(3):before {
+            content: "説明";
+            width: 8em;
+            border-right: 1px solid;
+        }
+        h4 ~ p:nth-of-type(-n+3) {
+            margin: 0px;
+            border: none;
+            border-bottom: 1px solid;
+            padding: 0px;
+            background-color: #ffffff;
+            height: 1.5em;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <h1>title</h1>
+    <h2>component1</h2>
+
+    <span class="usdm_req">
+    <h3>func1</h3>
+    <ul>
+        <li><em>要求 REQ-1</em>
+            <ul><li>a<div>xxx</div><p>xxx</p></ul>
+        <li><em>理由</em>
+            <ul><li>because...<ul><li>aaa<li>bbb</ul></ul>
+        <li><em>説明</em>
+            <ul><li>description...</ul>
+    </ul>
+    </span>
+
+    <span class="usdm_subreq">
+    <h4>func1 usage1</h4>
+    <ul>
+        <li><em>要求 REQ-1</em>
+            <ul><li>a<div>xxx</div><p>xxx</p></ul>
+        <li><em>理由</em>
+            <ul><li>because...<ul><li>aaa<li>bbb</ul></ul>
+        <li><em>説明</em>
+            <ul><li>description...</ul>
+    </ul>
+    </span>
+
+    <span class="usdm_func">
+    <h5>func1 usage1</h5>
+    <ul>
+        <li><em>FUNC-1</em>
+            <ul><li>function1</ul>
+        <li><em>FUNC-2</em>
+            <ul><li>function2</ul>
+        <li><em>FUNC-3</em>
+            <ul><li>function3</ul>
+    </ul>
+    </span>
+    
+
+<span class="usdm_req">
+<h3 class="code-line" data-line-start=3 data-line-end=4 ><a id="1_3"></a>機能1</h3>
+<ul>
+<li class="has-line-data" data-line-start="4" data-line-end="6"><em>要求 REQ1</em>
+<ul>
+<li class="has-line-data" data-line-start="5" data-line-end="6">aaaa</li>
+</ul>
+</li>
+<li class="has-line-data" data-line-start="6" data-line-end="8"><em>理由</em>
+<ul>
+<li class="has-line-data" data-line-start="7" data-line-end="8">ccc</li>
+</ul>
+</li>
+<li class="has-line-data" data-line-start="8" data-line-end="16"><em>説明</em>
+<ul>
+<li class="has-line-data" data-line-start="9" data-line-end="16">bbbb
+<ol>
+<li class="has-line-data" data-line-start="10" data-line-end="11">a</li>
+<li class="has-line-data" data-line-start="11" data-line-end="12">b</li>
+<li class="has-line-data" data-line-start="12" data-line-end="13">c</li>
+<li class="has-line-data" data-line-start="13" data-line-end="14">d</li>
+<li class="has-line-data" data-line-start="14" data-line-end="16">e</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</span>
+
+<span class="usdm_req">
+### 機能1
+ - *要求 REQ1*
+    - aaaa
+ - *理由*
+    - ccc
+ - *説明*
+    - bbbb
+</span>
+
+</body>
+</html>
